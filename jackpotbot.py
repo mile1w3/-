@@ -3,22 +3,22 @@ import time as t
 
 money = 10000
 
-def inform():
+# def inform():
    
-    print("현재 잔액:", money)
-    bet = int(input("배팅할 금액을 적어주세요."))
+#     print("현재 잔액:", money)
+#     bet = int(input("배팅할 금액을 적어주세요."))
     
-    if (bet.isdigit() == True):
+#     if (bet.isdigit() == True):
        
-        if(bet <= money):
-            jackpot()
-            return
-        else:
-            print("잔액 부족.")
-            return
-    else:
-        print("숫자만 입력하세요")
-        return
+#         if(bet <= money):
+#             jackpot()
+#             return
+#         else:
+#             print("잔액 부족.")
+#             return
+#     else:
+#         print("숫자만 입력하세요")
+#         return
 
 def jackpot(bet1):
     num1 = rd.randint(1,99)
@@ -40,8 +40,20 @@ def jackpot(bet1):
     return
 
 while True:
-    inform()
-
+   print("현재 잔액:", money)
+   a_bet = int(input("배팅할 금액을 적어주세요."))
+    
+   if (a_bet.isdigit() == True):
+       
+        if(a_bet <= money):
+            jackpot()
+          
+        else:
+            print("잔액 부족.")
+            
+   else:
+        print("숫자만 입력하세요")
+        
     
 
 
